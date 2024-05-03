@@ -1,0 +1,55 @@
+.team {
+  position: relative;
+
+  &__rectangle {
+    position: absolute;
+    top: 225px;
+    z-index: 1;
+  }
+
+
+  &__inner {
+    z-index: 50;
+    position: relative;
+  }
+  &__title {
+    font-family: $bebas;
+    font-size: 58px;
+    color: #333333;
+  }
+
+  &__name1 {
+    position: absolute;
+    top: 125px;
+    font-family: $bebas;
+    color: transparent;
+    -webkit-text-stroke: 1px $turquoise;
+    font-size: 288px;
+    line-height: 346px;
+  }
+
+  &__name2 {
+    position: absolute;
+    top: 665px;
+    right: 0;
+
+    font-family: $bebas;
+    color: transparent;
+    -webkit-text-stroke: 1px $turquoise;
+    font-size: 288px;
+    line-height: 346px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 57px;
+    margin-top: 143px;
+
+    &--text {
+      font-family: $manrope;
+      font-size: 16px;
+      line-height: 24px;
+      align-self: self-end;
+    }
+  }
+}
