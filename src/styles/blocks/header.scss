@@ -1,0 +1,138 @@
+.header {
+  &__rectangle {
+    position: relative;
+    height: 466px;
+    background-image: url(../images/Rectangle.png);
+    background-repeat: no-repeat;
+  }
+
+  &__picture {
+    width: 500px;
+    height: 500px;
+  }
+
+  &__inner {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 50;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+
+  &__logo {
+    width: 134px;
+    height: auto;
+
+    &--img {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-family: $manrope;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4f4f4f;
+    transition-duration: .5s;
+
+    &:hover {
+      color: $turquoise;
+    }
+  }
+
+  &__cart {
+    width: 48px;
+
+    &--img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    width: 470px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__price {
+    font-family: $manrope;
+    font-weight: 700;
+    margin-bottom: 5px;
+    text-align: right;
+  }
+
+  &__desc {
+    font-family: $manrope;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    position: absolute;
+    left: 342px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    padding: 14px 76px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: $yellow;
+    border: 1px solid $yellow;
+    margin-left: calc(100% - 252px);
+    transition-duration: .5s;
+    position: absolute;
+    right: calc(100% - 240 * 2px);
+    top: 370px;
+
+
+    &--text {
+      font-family: $manrope;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      width: max-content;
+    }
+
+    &:hover {
+      background-color: $yellowLight;
+      border: 1px solid $yellowLight;
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    top: 466px;
+
+    &--text {
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: $turquoise;
+      writing-mode: vertical-lr;
+      font-family: $manrope;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+}
